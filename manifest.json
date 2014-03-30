@@ -1,0 +1,30 @@
+{
+	"name": "Hello Werld!",
+	"description": "My thirsty Chrome App.",
+	"manifest_version": 2,
+	"version": "0.0.1",
+	"app": {
+		"background": {
+			"scripts": [
+				"background.js"
+			]
+		}
+	},
+	"permissions": [
+		"storage",
+		"clipboardRead",
+		"clipboardWrite",
+		"https://api.somewhere.com/*",
+		{"fileSystem" : ["write"]} // for writing xlsx files?
+	],
+	
+	"icons": { 
+		"16": "assets/icon-16.png", 
+		//		"48": "assets/icon-48.png", 
+		"128": "assets/icon-128.png" 
+	}
+  
+  
+	// Recommended
+	//  "default_locale": "en",
+}
